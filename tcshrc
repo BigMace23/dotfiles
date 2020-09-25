@@ -1,0 +1,22 @@
+setenv EDITOR vim
+
+if ($?prompt) then
+	set     red="%{\033[1;31m%}"
+	set   green="%{\033[0;32m%}"
+	set  yellow="%{\033[1;33m%}"
+	set    blue="%{\033[1;34m%}"
+	set magenta="%{\033[1;35m%}"
+	set    cyan="%{\033[1;36m%}"
+	set   white="%{\033[0;37m%}"
+	set     end="%{\033[0m%}" 
+	
+	set prompt="${green}[%n@%m | %T | %c] ${blue}>${cyan}>${end} "
+
+	alias ls ls --color=auto
+
+	# Option to redefine caps lock key to be another control
+	setxkbmap -option caps:ctrl_modifier
+endif
+
+alias encrypt ~/tcsh_scripts/encrypt_folder_contents.tcsh
+alias decrypt ~/tcsh_scripts/decrypt_folder_contents.tcsh
