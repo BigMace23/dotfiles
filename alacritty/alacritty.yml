@@ -391,6 +391,7 @@ cursor:
 # - `mods` (see key bindings)
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
+  - { mouse: Right, action: CopySelection }
 
 # Key bindings
 #

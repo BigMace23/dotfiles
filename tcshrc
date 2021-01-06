@@ -21,3 +21,4 @@ endif
 alias encrypt ~/tcsh_scripts/encrypt_folder_contents.tcsh
 alias decrypt ~/tcsh_scripts/decrypt_folder_contents.tcsh
 alias scan "cd ~/scanned_images && hp-scan -m 'color' && cd -"
+
